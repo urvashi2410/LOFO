@@ -1,12 +1,15 @@
 import 'package:flutter/material.dart';
+import 'package:lofo/Constant/colors.dart';
 
 class CustomButton extends StatelessWidget {
   final String title;
   final Color color;
+  final bool isTransparent;
   const CustomButton({
     Key? key,
     required this.title,
     required this.color,
+    this.isTransparent = false,
   }) : super(key: key);
 
   @override
@@ -16,9 +19,13 @@ class CustomButton extends StatelessWidget {
       height: 50,
       child: ElevatedButton(
         style: ButtonStyle(
-          backgroundColor: MaterialStateProperty.all(
-            color,
-          ),
+          backgroundColor: isTransparent == false
+              ? MaterialStateProperty.all(
+                  color,
+                )
+              : MaterialStateProperty.all(
+                  Colors.white,
+                ),
           shape: MaterialStateProperty.all(
             StadiumBorder(
               side: BorderSide(
@@ -31,13 +38,12 @@ class CustomButton extends StatelessWidget {
         onPressed: () {},
         child: Text(
           title,
-          style: const TextStyle(
-            color: Colors.white,
+          style:  TextStyle(
+            color: isTransparent == false?  Colors.white : AppColors().darkBlue,
             fontWeight: FontWeight.bold,
           ),
         ),
       ),
-      
     );
   }
 }

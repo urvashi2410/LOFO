@@ -13,13 +13,15 @@ class LoginPage extends StatelessWidget {
         padding: EdgeInsets.symmetric(vertical: 30, horizontal: 25),
         child: Column(
           children: [
-            Spacer(),
+            const Spacer(),
             CircleAvatar(
               radius: 85,
               backgroundImage: NetworkImage(
                   'https://williepatersonlivestock.co.uk/wp-content/uploads/2022/01/D1F7A7AA-E958-4B7C-87F4-99BB66383D1D.png'),
             ),
-            Spacer(flex: 4,),
+            const Spacer(
+              flex: 4,
+            ),
             Text(
               "Login Now",
               style: TextStyle(
@@ -28,7 +30,7 @@ class LoginPage extends StatelessWidget {
                 fontSize: 28,
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 10,
             ),
             Text(
@@ -38,15 +40,19 @@ class LoginPage extends StatelessWidget {
                 fontSize: 16,
               ),
             ),
-            Spacer(flex: 4,),
+            const Spacer(
+              flex: 4,
+            ),
             CustomTextInput(
               hintText: "Enter your email",
             ),
-            Spacer(flex: 2,),
+            const Spacer(
+              flex: 2,
+            ),
             CustomTextInput(
               hintText: "Enter your password",
             ),
-            SizedBox(
+            const SizedBox(
               height: 10,
             ),
             Row(
@@ -61,12 +67,14 @@ class LoginPage extends StatelessWidget {
                 ),
               ],
             ),
-            Spacer(flex: 5,),
+            const Spacer(
+              flex: 5,
+            ),
             CustomButton(
               title: "Login",
               color: AppColors().blue,
             ),
-            Spacer(),
+            const Spacer(),
             CustomButton(
               title: "Login with Google",
               color: AppColors().google_sign_in_color,
