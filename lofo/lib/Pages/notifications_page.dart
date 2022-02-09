@@ -29,7 +29,7 @@ class Notifications extends StatelessWidget {
                 )
               ],
             ),
-            Spacer(),
+            const Spacer(),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
