@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "678287564564",
+    "project_id": "lost-and-found-6df49",
+    "storage_bucket": "lost-and-found-6df49.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:678287564564:android:1b4719a2525b0917c2ec01",
+        "android_client_info": {
+          "package_name": "com.example.lofo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "678287564564-qjgdni1jdhrpqeugurmvgms0t430p13q.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.lofo",
+            "certificate_hash": "fd721b54f78dcab93351240b0e72e8298e626d41"
+          }
+        },
+        {
+          "client_id": "678287564564-l11obebvg9tgfgudrd9e7qka22hvulb6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBE-uTLdw8HuilkV64dryUDFmlZ404Jal4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "678287564564-l11obebvg9tgfgudrd9e7qka22hvulb6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
