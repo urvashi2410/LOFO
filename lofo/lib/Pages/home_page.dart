@@ -38,7 +38,9 @@ class HomePage extends StatelessWidget {
                 ),
               ],
             ),
-            const Spacer(flex: 2,),
+            const Spacer(
+              flex: 2,
+            ),
             Row(
               children: [
                 Text(
@@ -60,6 +62,7 @@ class HomePage extends StatelessWidget {
                     width: MediaQuery.of(context).size.width / 1.2,
                     height: MediaQuery.of(context).size.height / 5,
                     decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(10),
                       image: DecorationImage(
                         fit: BoxFit.cover,
                         image:
@@ -70,7 +73,9 @@ class HomePage extends StatelessWidget {
                 )
               ],
             ),
-            const Spacer(flex: 3,),
+            const Spacer(
+              flex: 3,
+            ),
             Row(
               children: [
                 Text(

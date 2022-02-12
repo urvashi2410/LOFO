@@ -102,6 +102,7 @@ class ObjectPage extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 20),
               child: CustomButton(
+                onPressFunction: () {},
                 title: "Found it Similar?",
                 color: AppColors().google_sign_in_color,
               ),

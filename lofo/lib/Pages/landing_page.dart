@@ -59,11 +59,13 @@ class LandingPage extends StatelessWidget {
               flex: 5,
             ),
             CustomButton(
+              onPressFunction: () {},
               title: "Login",
               color: AppColors().blue,
             ),
             const Spacer(),
             CustomButton(
+              onPressFunction: () {},
               isTransparent: true,
               title: "Sign up",
               color: AppColors().blue,

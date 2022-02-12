@@ -14,13 +14,15 @@ class SignUpPage extends StatelessWidget {
         child: Column(
           children: [
             const Spacer(),
-            CircleAvatar(
+            const CircleAvatar(
               radius: 60,
               backgroundImage: NetworkImage(
                 'https://williepatersonlivestock.co.uk/wp-content/uploads/2022/01/D1F7A7AA-E958-4B7C-87F4-99BB66383D1D.png',
               ),
             ),
-            const Spacer(flex: 2,),
+            const Spacer(
+              flex: 2,
+            ),
             Text(
               "Sign Up",
               style: TextStyle(
@@ -29,7 +31,7 @@ class SignUpPage extends StatelessWidget {
                 fontSize: 28,
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 10,
             ),
             Text(
@@ -53,6 +55,7 @@ class SignUpPage extends StatelessWidget {
               flex: 5,
             ),
             CustomButton(
+              onPressFunction: () {},
               title: "Create An Account",
               color: AppColors().blue,
             ),

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:lofo/Constant/colors.dart';
+import 'package:lofo/Firebase/google_authentication.dart';
 import 'package:lofo/Widgets/widgets.dart';
 
 class LoginPage extends StatelessWidget {
@@ -71,11 +72,17 @@ class LoginPage extends StatelessWidget {
               flex: 5,
             ),
             CustomButton(
+              onPressFunction: () {},
               title: "Login",
               color: AppColors().blue,
             ),
             const Spacer(),
             CustomButton(
+              onPressFunction: () =>
+                  Authentication.signInWithGoogle(context: context)
+                      .then((value) {
+                print("Logged In");
+              }),
               title: "Login with Google",
               color: AppColors().google_sign_in_color,
             )

@@ -15,6 +15,7 @@ class CustomHomeCard extends StatelessWidget {
         width: MediaQuery.of(context).size.width / 2.5,
         height: MediaQuery.of(context).size.height / 5,
         decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(8),
           image: DecorationImage(
             fit: BoxFit.cover,
             image: NetworkImage(img),

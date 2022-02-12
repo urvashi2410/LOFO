@@ -5,11 +5,13 @@ class CustomButton extends StatelessWidget {
   final String title;
   final Color color;
   final bool isTransparent;
+  final Function onPressFunction;
   const CustomButton({
     Key? key,
     required this.title,
     required this.color,
     this.isTransparent = false,
+    required this.onPressFunction,
   }) : super(key: key);
 
   @override
@@ -35,11 +37,11 @@ class CustomButton extends StatelessWidget {
             ),
           ),
         ),
-        onPressed: () {},
+        onPressed: () => onPressFunction(),
         child: Text(
           title,
-          style:  TextStyle(
-            color: isTransparent == false?  Colors.white : AppColors().darkBlue,
+          style: TextStyle(
+            color: isTransparent == false ? Colors.white : AppColors().darkBlue,
             fontWeight: FontWeight.bold,
           ),
         ),

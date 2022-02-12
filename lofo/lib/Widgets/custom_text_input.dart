@@ -24,7 +24,7 @@ class CustomTextInput extends StatelessWidget {
           hintStyle: TextStyle(
             color: AppColors().grey,
           ),
-          contentPadding: EdgeInsets.only(
+          contentPadding: const EdgeInsets.only(
             left: 40,
           ),
         ),
