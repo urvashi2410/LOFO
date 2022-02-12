@@ -43,9 +43,7 @@ class ProfilePage extends StatelessWidget {
                 fontSize: 16,
               ),
             ),
-            const Spacer(
-              flex: 2,
-            ),
+            const Spacer(),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -117,7 +115,10 @@ class ProfilePage extends StatelessWidget {
                   ),
                 ),
               ],
-            )
+            ),
+            const Spacer(
+              flex: 4,
+            ),
           ],
         ),
       ),

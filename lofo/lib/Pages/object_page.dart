@@ -27,19 +27,33 @@ class ObjectPage extends StatelessWidget {
             ),
             const Spacer(),
             Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+              padding: const EdgeInsets.symmetric(
+                horizontal: 20,
+                vertical: 10,
+              ),
               child: Row(
                 children: [
-                  CircleAvatar(
+                  const CircleAvatar(
                     radius: 16,
                     backgroundImage: NetworkImage(user),
                   ),
-                  SizedBox(
+                  const SizedBox(
+                    width: 10,
+                  ),
+                  const Text(
+                    "FlyDeck",
+                    style: TextStyle(
+                      fontWeight: FontWeight.w600,
+                      fontSize: 16,
+                    ),
+                  ),
+                  const SizedBox(
                     width: 10,
                   ),
                   Text(
-                    "FlyDeck",
+                    "12 June 2021",
                     style: TextStyle(
+                      color: AppColors().green,
                       fontWeight: FontWeight.w600,
                       fontSize: 16,
                     ),
@@ -85,7 +99,7 @@ class ObjectPage extends StatelessWidget {
               ),
             ),
             const Spacer(),
-            Divider(),
+            const Divider(),
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
               child: Text(
@@ -103,7 +117,7 @@ class ObjectPage extends StatelessWidget {
               padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 20),
               child: CustomButton(
                 onPressFunction: () {},
-                title: "Found it Similar?",
+                title: "Contact",
                 color: AppColors().google_sign_in_color,
               ),
             )
