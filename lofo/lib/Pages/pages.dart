@@ -6,3 +6,5 @@ export 'notifications_page.dart';
 // export 'object_page.dart';
 // export 'profile_page.dart';
 export 'signup_page.dart';
+export 'confirmation_page.dart';
+export 'error_page.dart';

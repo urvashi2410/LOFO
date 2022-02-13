@@ -77,6 +77,7 @@ class CustomObjectList extends StatelessWidget {
                       fontSize: 16,
                     ),
                   ),
+                  const Spacer(),
                 ],
               ),
             ),

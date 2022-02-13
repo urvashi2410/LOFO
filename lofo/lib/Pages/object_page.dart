@@ -95,6 +95,7 @@ class ObjectPage extends StatelessWidget {
                       ),
                     ],
                   ),
+                  
                 ],
               ),
             ),
@@ -120,7 +121,8 @@ class ObjectPage extends StatelessWidget {
                 title: "Contact",
                 color: AppColors().google_sign_in_color,
               ),
-            )
+            ),
+            const Spacer(),
           ],
         ),
       ),

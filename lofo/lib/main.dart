@@ -1,5 +1,7 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'package:lofo/Pages/object_page.dart';
+import 'package:lofo/Pages/profile_page.dart';
 import 'Pages/pages.dart';
 
 void main() async {

@@ -3,7 +3,7 @@ import 'package:lofo/Constant/colors.dart';
 import 'package:lofo/Widgets/widgets.dart';
 
 const String url =
-    'https://images.thefacecdn.com/images/13.-GettyImages-1130598318.jpg?fit=crop&crop=focalpoint&fp-x=0.5&fp-y=0.5&w=1180';
+    'https://williepatersonlivestock.co.uk/wp-content/uploads/2022/01/D1F7A7AA-E958-4B7C-87F4-99BB66383D1D.png';
 
 class ListPage extends StatelessWidget {
   const ListPage({Key? key}) : super(key: key);
@@ -15,14 +15,16 @@ class ListPage extends StatelessWidget {
         appBar: AppBar(
           title: Text(
             "Post",
-            style: TextStyle(color: AppColors().darkBlue),
+            style: TextStyle(
+              color: AppColors().darkBlue,
+            ),
           ),
           centerTitle: true,
           backgroundColor: AppColors().bg,
           elevation: 0,
         ),
         body: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 15),
+          padding: const EdgeInsets.symmetric(horizontal: 12,),
           child: SingleChildScrollView(
             scrollDirection: Axis.vertical,
             child: Column(
