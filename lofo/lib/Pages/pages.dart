@@ -8,3 +8,4 @@ export 'profile_page.dart';
 export 'signup_page.dart';
 export 'found_page.dart';
 export 'error_page.dart';
+export 'choice_page.dart';
