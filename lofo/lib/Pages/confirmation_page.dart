@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:lofo/Constant/colors.dart';
 import 'package:lofo/Widgets/widgets.dart';
 
-class ErrorPage extends StatelessWidget {
-  const ErrorPage({Key? key}) : super(key: key);
+class ConfirmationPage extends StatelessWidget {
+  const ConfirmationPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -17,16 +17,16 @@ class ErrorPage extends StatelessWidget {
             const CircleAvatar(
               radius: 30,
               backgroundImage: AssetImage(
-                "assets/images/fail.png",
+                "assets/images/success.png",
               ),
             ),
             const SizedBox(
               height: 20,
             ),
             Text(
-              "Something went wrong",
+              "Successfully Posted",
               style: TextStyle(
-                color: AppColors().google_sign_in_color,
+                color: AppColors().green,
                 fontWeight: FontWeight.bold,
                 fontSize: 28,
               ),
@@ -34,8 +34,9 @@ class ErrorPage extends StatelessWidget {
             const SizedBox(
               height: 10,
             ),
+
             Text(
-              "Please try again later",
+              "You post will be visible now",
               style: TextStyle(
                 color: AppColors().grey,
                 fontSize: 16,
@@ -45,11 +46,12 @@ class ErrorPage extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.all(26.0),
               child: CustomButton(
-                title: "Back to Home",
-                color: AppColors().google_sign_in_color,
+                title: "Continue",
+                color: AppColors().green,
                 onPressFunction: () {},
               ),
             ),
+
           ],
         ),
       ),

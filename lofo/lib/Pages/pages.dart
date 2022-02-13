@@ -7,5 +7,6 @@ export 'object_page.dart';
 export 'profile_page.dart';
 export 'signup_page.dart';
 export 'found_page.dart';
-export 'error_page.dart';
 export 'choice_page.dart';
+export 'confirmation_page.dart';
+export 'error_page.dart';
